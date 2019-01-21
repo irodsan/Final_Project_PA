@@ -8,9 +8,12 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8">
         <title></title>
+
+        <?php include 'libraries.php'; ?>
     </head>
     <body>
         <?php
+        include_once 'header.php';
         //
         echo "prueba";
         ?>

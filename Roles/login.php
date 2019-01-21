@@ -26,7 +26,8 @@
 </html>
 
 <?php
-
+    //start session
+    session_start();
     //hadle the form and validate the input
 
     $userName = $_POST["username"];
