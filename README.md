@@ -7,3 +7,5 @@ TODO:
 2. librarys.php que incluya las importaciones de librerias y la hoja de estilo css
 3. header.php que sea la barra de navegacion comun en todas las paginas
 4. index.php en carpeta padre
+ 
+Fernando
