@@ -4,9 +4,16 @@
     once the user has log in the page will redirect the user to index.php-->
 <html>
 
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+
+        <?php include '../libraries.php'; ?>
+    </head>
+
     <body>
         <!--ESTO NO FUNCIONA POR ALGUNA RAZON-->
-        <?php include'header.php'; ?>
+        <?php include '../header.php'; ?>
 
 
         <form action="#" method="POST">
@@ -97,8 +104,4 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
         }
     }
 }
-            
-    
-   
-    
 

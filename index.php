@@ -15,7 +15,7 @@ and open the template in the editor.
         <?php
         include_once 'header.php';
         //
-        echo "prueba";
+        echo "prueba";  
         ?>
     </body>
 </html>
