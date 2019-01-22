@@ -9,3 +9,24 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+-->
+
+
+<?php
+
+function dbConnection() {
+    //Connect to database
+    $con = mysqli_connect("localhost", "root", "");
+
+//check connection
+    if (!$con) {
+        die("ERROR: Can't connect to host");
+    }
+    $db = mysqli_select_db($con, "pa_proyecto_final");
+
+    if (!$db) {
+        die("ERROR: Can't connect to DB ");
+    }
+    
+    return $con;
+}

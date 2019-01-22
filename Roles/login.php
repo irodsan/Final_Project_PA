@@ -12,7 +12,7 @@
     </head>
 
     <body>
-        <!--ESTO NO FUNCIONA POR ALGUNA RAZON-->
+
         <?php include '../header.php'; ?>
 
 
@@ -43,27 +43,12 @@
 //start session
 session_start();
 
-//Connect to database
-$con = mysqli_connect("localhost", "root", "");
+
 
 //hadle the form and validate the input
 if (isset($_POST['username']) && isset($_POST['password'])) {
 
-    $userName = $_POST['username'];
-    $password = $_POST['password'];
-
-
-//check connection
-    if (!$con) {
-        die("ERROR: Can't connect to host");
-    }
-    $db = mysqli_select_db($con, "pa_proyecto_final");
-
-    if (!$db) {
-        die("ERROR: Can't connect to DB ");
-    }
-
-
+$con = dbConnection();
 
 //Save values in an array and sanitize them
     $arraySanitize = array('userName' => FILTER_SANITIZE_STRING,
@@ -71,6 +56,8 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 
 //filter the values
     $formInput = filter_input_array(INPUT_POST, $arraySanitize);
+    $userName = $formInput['username'];
+    $password = $formInput['password'];
 
 //now do the DB search
 //first sql sentence to find user in the DB
