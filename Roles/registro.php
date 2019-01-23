@@ -219,32 +219,3 @@
 
 </html>
 
-<script>
-    //Esta funcion sirve para mostrar o ocultar distintos campos del formulario
-    //en funcion de el valor de cmpValor que le pasemos
-    //ocultara idElem si no se cumple y mostrara idElem2 en el caso de
-    //que se le haya mandado alguno
-    //Funsion sedida por el gran Am3
-    function showCarForm(idValor, idElem, idElem2, cmpValor) {
-        var x = document.getElementById(idElem);
-        var valor = document.getElementById(idValor);
-        if (idElem2 != null) {
-            var x2 = document.getElementById(idElem2);
-        }
-        if (valor.value == cmpValor) {
-            x.style.display = "block";
-            if (x2 != null) {
-                x2.style.display = "none";
-            }
-
-            return true;
-        } else if (valor.value != cmpValor) {
-            x.style.display = "none";
-            if (x2 != null) {
-                x2.style.display = "block";
-            }
-
-        }
-        return false;
-    }
-</script>
