@@ -111,7 +111,7 @@
             if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
                 $error[] = "Email not valid";
             }
-            if (strlen($_POST['password']) < 8) {
+            if (strlen($_POST['password']) < 1) {
                 $error[] = "Password must contain at least 8 characters";
             }
 
@@ -125,7 +125,7 @@
                     $error[] = "Slots not valid";
                 }
             }
-            print_r($error);
+            //print_r($error);
 
             //filtered array
             $formInput = filter_input_array(INPUT_POST, $arraySanitize);
@@ -168,39 +168,43 @@
                     . "', '" . $userName . "', '" . $hashedPass . "', '" . $phoneNumber
                     . "', '" . $cardNumber . "', '" . $rol . "')";
 
-            echo $sqlUser;
+          //  echo $sqlUser;
             //insert into DB
             $query1 = mysqli_query($con, $sqlUser);
 
             if (!$query1) {
-                echo "error sql1";
+              //  echo "error sql1";
                 $error[] = "User already registered";
                 mysqli_close($con);
             } else {
-                echo "true";
+              //  echo "true";
 
                 //get the automated generated id from last query
                 $user_id = mysqli_insert_id($con);
-
+                echo "slots: " . $carSlots;
                 //if slots is true means theres a number thus a driver and a car to insert
-                if (!$slots) {
+                if ($carSlots) {
                     //sql sentence for inserting vehicle
                     $sqlVehicle = "INSERT INTO vehiculo (Matricula, Plazas, Propietario_id)"
-                            . " VALUES ('" . $plateNumber . "', " . $carSlots . "', '" . $user_id
+                            . " VALUES ('" . $plateNumber . "', '" . $carSlots . "', '" . $user_id
                             . "')";
 
                     //insert vehicle into DB
                     $query2 = mysqli_query($con, $sqlVehicle);
+
+                    if (!$query2) {
+                        $error[] = "Vehicle already registered";
+                    }
+                    
+                }else{
+                    $error[] = "Error iserting vehicle";
                 }
 
                 $_SESSION["user"] = $userName;
                 $_SESSION["user_id"] = $user_id;
                 $_SESSION["type"] = $rol;
 
-                if (!$query2) {
-                    $error[] = "Vehicle already registered";
-                }
-
+                print_r($error);
 
                 mysqli_close($con);
                 header("Location: index.php");
