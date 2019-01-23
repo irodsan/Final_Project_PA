@@ -6,20 +6,20 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
 <!--Libraries needed for the template in the index page link: https://github.com/BlackrockDigital/startbootstrap-landing-page
- <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    
-     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Custom fonts for this template -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+<!-- Bootstrap core CSS -->
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/landing-page.min.css" rel="stylesheet">
+<!-- Custom fonts for this template -->
+<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+<!-- Custom styles for this template -->
+<link href="css/landing-page.min.css" rel="stylesheet">
 
 <!--Bootstrap 3 libraries
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -29,6 +29,7 @@
 
 <!--All php function here:  -->
 <?php
+
 //this function handles the connection to the DB
 function dbConnection() {
     //Connect to database
@@ -43,10 +44,9 @@ function dbConnection() {
     if (!$db) {
         die("ERROR: Can't connect to DB ");
     }
-    
+
     return $con;
 }
-
 ?>
 
 <!--All javascript functions here:   -->
@@ -62,20 +62,21 @@ function dbConnection() {
         if (idElem2 != null) {
             var x2 = document.getElementById(idElem2);
         }
-        if (valor.value == cmpValor) {
+        if (valor.value === cmpValor) {
             x.style.display = "block";
             if (x2 != null) {
                 x2.style.display = "none";
             }
 
             return true;
-        } else if (valor.value != cmpValor) {
+        } else if (valor.value !== cmpValor) {
             x.style.display = "none";
-            if (x2 != null) {
+            if (x2 !== null) {
                 x2.style.display = "block";
             }
 
         }
         return false;
     }
+    
 </script>

@@ -1,9 +1,6 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
+
 <html>
     <head>
         <meta charset="UTF-8">
@@ -14,7 +11,7 @@ and open the template in the editor.
     <body>
         <?php include_once 'header.php'; ?>
 
-        <!-- Masthead -->
+        
         <header class="masthead text-white text-center">
             <div class="overlay"></div>
             <div class="container">
@@ -25,17 +22,27 @@ and open the template in the editor.
                     <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
                         <form>
                             <div class="form-row">
-                                <div class="col-12 col-md-9 mb-2 mb-md-0">
-                                    <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
+                                <div class="col-12 col-md-3 mb-2 mb-md-0">
+                                    <input type="email" class="form-control form-control-lg" placeholder="From...">
+                                </div>
+                                <div class="col-12 col-md-3 mb-2 mb-md-0">
+                                    <input type="email" class="form-control form-control-lg" placeholder="To...">
+                                </div>
+                                <div class="col-12 col-md-3 mb-2 mb-md-0">
+                                    <div class="form-group">
+                                        <input type="date" class="form-control" placeholder="Date">
+
+                                    </div>
                                 </div>
                                 <div class="col-12 col-md-3">
-                                    <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
+                                    <button type="submit" class="btn btn-block btn-lg btn-primary">Search!</button>
                                 </div>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
+
         </header>
 
     </body>
