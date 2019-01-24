@@ -6,7 +6,6 @@ TODO:
 1. Diseño pagina principal
 2. Registro
 3. Introducir formularios y funcionalidades de login.php en funciones
-4. Bug en el saneamiento del login
 5. registro no considera las tablas especializadas de los usuarios solo inserta en la tabla usuario y vehiculo en caso de haberlo
 6. incrementar valor maximo de logintud para el email
 7. Cambiar en header para que cuando el usuario este logeado no se muestre el boton de login y cuando no lo este no se muestre las opciones de ajustes de cuenta
@@ -21,7 +20,7 @@ Pantallas:
 -login
 -Ajustes: pagina para cambiar los parametros del usuario(nombre, correo, añadir vehiculos,...)
 -viajes: pagina listando todos los viajes en los que se ha participado
--viajes planeado: pagina listando los viajes en los que el usuario ha sido conductor
+-viajes-conductor: pagina listando los viajes en los que el usuario ha sido conductor
 -Planear viaje: Pagina para que lo conductores planeen viajes.
 -Valorar: pagina para crear valoraciones sobre viajes y conductores
 -Foros: pagina que listara los foros disponibles
