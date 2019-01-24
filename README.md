@@ -12,6 +12,7 @@ TODO:
 
 La carpeta DB contiene el .sql de la base de datos, para actualizar el archivo de la base de datos modificar/subir el archivo a esa carpeta.
 
+Posible template para los ajustes de cuenta: https://bootsnipp.com/snippets/M48pA
 
 Pantallas:
 

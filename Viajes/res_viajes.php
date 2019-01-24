@@ -8,110 +8,54 @@
     <?php include_once '../header.php'; ?>
 </head>
 
-<div class="clearfix"></div>
-<section class="search-box">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 listing-block">
-                <div class="media">
-                    <div class="fav-box"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                    </div>
-                    <img class="d-flex align-self-start" src="https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?h=350&auto=compress&cs=tinysrgb" alt="Generic placeholder image">
-                    <div class="media-body pl-3">
-                        <div class="price">$799,000<small>New York</small></div>
-                        <div class="stats">
-                            <span><i class="fa fa-arrows-alt"></i>1678 Sq ft</span>
-                            <span><i class="fa fa-bath"></i>2 Beadrooms</span>
-                        </div>
-                        <div class="address">4062 Walnut Hill Drive
-                            Cincinnati</div>
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="fav-box"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                    </div>
-                    <img class="d-flex align-self-start" src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?h=350&auto=compress&cs=tinysrgb" alt="Generic placeholder image">
-                    <div class="media-body pl-3">
-                        <div class="price">$506,400<small>New York</small></div>
-                        <div class="stats">
-                            <span><i class="fa fa-arrows-alt"></i>1678 Sq ft</span>
-                            <span><i class="fa fa-bath"></i>2 Beadrooms</span>
-                        </div>
-                        <div class="address">4062 Walnut Hill Drive
-                            Cincinnati</div>
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="fav-box"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                    </div>
-                    <img class="d-flex align-self-start" src="https://images.pexels.com/photos/358636/pexels-photo-358636.jpeg?h=350&auto=compress&cs=tinysrgb" alt="Generic placeholder image">
-                    <div class="media-body pl-3">
-                        <div class="price">$506,400<small>New York</small></div>
-                        <div class="stats">
-                            <span><i class="fa fa-arrows-alt"></i>1678 Sq ft</span>
-                            <span><i class="fa fa-bath"></i>2 Beadrooms</span>
-                        </div>
-                        <div class="address">4062 Walnut Hill Drive
-                            Cincinnati</div>
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="fav-box"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                    </div>
-                    <img class="d-flex align-self-start" src="https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?h=350&auto=compress&cs=tinysrgb" alt="Generic placeholder image">
-                    <div class="media-body pl-3">
-                        <div class="price">$799,000<small>New York</small></div>
-                        <div class="stats">
-                            <span><i class="fa fa-arrows-alt"></i>1678 Sq ft</span>
-                            <span><i class="fa fa-bath"></i>2 Beadrooms</span>
-                        </div>
-                        <div class="address">4062 Walnut Hill Drive
-                            Cincinnati</div>
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="fav-box"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                    </div>
-                    <img class="d-flex align-self-start" src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?h=350&auto=compress&cs=tinysrgb" alt="Generic placeholder image">
-                    <div class="media-body pl-3">
-                        <div class="price">$506,400<small>New York</small></div>
-                        <div class="stats">
-                            <span><i class="fa fa-arrows-alt"></i>1678 Sq ft</span>
-                            <span><i class="fa fa-bath"></i>2 Beadrooms</span>
-                        </div>
-                        <div class="address">4062 Walnut Hill Drive
-                            Cincinnati</div>
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="fav-box"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                    </div>
-                    <img class="d-flex align-self-start" src="https://images.pexels.com/photos/358636/pexels-photo-358636.jpeg?h=350&auto=compress&cs=tinysrgb" alt="Generic placeholder image">
-                    <div class="media-body pl-3">
-                        <div class="price">$506,400<small>New York</small></div>
-                        <div class="stats">
-                            <span><i class="fa fa-arrows-alt"></i>1678 Sq ft</span>
-                            <span><i class="fa fa-bath"></i>2 Beadrooms</span>
-                        </div>
-                        <div class="address">4062 Walnut Hill Drive
-                            Cincinnati</div>
-                    </div>
+<body>
+    <section class="pt-2">
+        <div class="container">
+            <div class="row my-3">
+                <div class="col-md-12">
+                    <h4>Find the New perfect trip you are looking for!</h4>
                 </div>
             </div>
-            <div class="col-md-7 map-box mx-0 px-0">
-                <iframe width="100%" height="495" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps?f=q&source=s_q&hl=en&geocode=&815&sspn=8.047465,13.666992&ie=UTF8&hq=&hnear=15+Springfield+Way,+Hythe+CT21+5SH,+United+Kingdom&t=m&z=14&ll=51.077429,1.121722&output=embed"></iframe>
+
+            <!--start of code for trip search results-->
+
+
+            <div class="row mb-3">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row ">
+                                <div class="col-md-3">
+                                    <img class="user-pic" src="../img/user_icon.jpg" alt="">
+                                </div>
+                                <div class="col-md-5">
+                                    <h4>Driver Name</h4>
+                                    <a href="#">click to check offers & discounts</a>
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item">Origin</li>
+                                        <li class="list-inline-item">Destination</li>
+                                        <li class="list-inline-item">5 Free Seats</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h6>3 Free seats</h6>
+                                    <div class="sub-row">
+                                        <button type="button" class="btn btn-secondary btn-sm btn-block">RESERVE SEAT</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
+
         </div>
-    </div>
-</section>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.8/jquery.slimscroll.min.js"></script>
-<script>
-    $(function () {
-        $('.listing-block').slimScroll({
-            height: '500px'
-        });
-    });
-</script>
+    </section>
+</body>
+
+
 
 
 
